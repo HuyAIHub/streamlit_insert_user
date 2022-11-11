@@ -1,45 +1,29 @@
-usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]
-           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]
-           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]
-           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]
-           <command> [<args>]
+Real Time Face Recognition System
 
-These are common Git commands used in various situations:
+References and research:
+RTSP,frame,video,...
+Face detection (YOLOV5-face):
+https://github.com/biubug6/Pytorch_Retinaface (no work)
+https://github.com/deepcam-cn/yolov5-face (prefer)
+Face recognition (Arc Face-paddle):
+Guideline and explanation inference: https://github.com/littletomatodonkey/insight-face-paddle 
+Inference: https://github.com/deepinsight/insightface/blob/master/recognition/arcface_paddle/deploy/pdserving/README.md 
 
-start a working area (see also: git help tutorial)
-   clone             Clone a repository into a new directory
-   init              Create an empty Git repository or reinitialize an existing one
+Flow Overview:
+Step 1: Streaming 
+Step 2: Face Detection
+face bounding box, lanmark
+face align and crop : -> face aligned
+Step 3: Tracking
+Step 4: Face Recognition
+face recognition 
+Step 5: Output processing
 
-work on the current change (see also: git help everyday)
-   add               Add file contents to the index
-   mv                Move or rename a file, a directory, or a symlink
-   restore           Restore working tree files
-   rm                Remove files from the working tree and from the index
-   sparse-checkout   Initialize and modify the sparse-checkout
-
-examine the history and state (see also: git help revisions)
-   bisect            Use binary search to find the commit that introduced a bug
-   diff              Show changes between commits, commit and working tree, etc
-   grep              Print lines matching a pattern
-   log               Show commit logs
-   show              Show various types of objects
-   status            Show the working tree status
-
-grow, mark and tweak your common history
-   branch            List, create, or delete branches
-   commit            Record changes to the repository
-   merge             Join two or more development histories together
-   rebase            Reapply commits on top of another base tip
-   reset             Reset current HEAD to the specified state
-   switch            Switch branches
-   tag               Create, list, delete or verify a tag object signed with GPG
-
-collaborate (see also: git help workflows)
-   fetch             Download objects and refs from another repository
-   pull              Fetch from and integrate with another repository or a local branch
-   push              Update remote refs along with associated objects
-
-'git help -a' and 'git help -g' list available subcommands and some
-concept guides. See 'git help <command>' or 'git help <concept>'
-to read about a specific subcommand or concept.
-See 'git help git' for an overview of the system.
+DO:
+Server 1: 
+The first - front end : Insert face image (ảnh chụp mặt) and information từ web.
+The second - back end: Crop and align face after that save to FOLDER (to make embedding theo tên đã nhập)
+The third - back end: Create index.bin (file này dùng để lưu {label:embedded} sau sẽ load lên để compare cosine distance)
+The fourth - back end: push index.bin to Minio and Send message notify using kafka to Server Inference.
+Server 2: Ở đây sẽ chạy infer và trả về kết quả
+The last - back end: After receiving a message. update index.bin and keep running
