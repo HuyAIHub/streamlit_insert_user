@@ -1,0 +1,7 @@
+streamlit
+opencv-python
+opencv-contrib-python
+deta
+folium
+psycopg2-binary
+

@@ -1,0 +1,301 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://10.0.8.110:8502
+  External URL: http://171.244.3.130:8502
+
+/data/huydq46/Face/face_env/lib/python3.8/site-packages/torch/functional.py:504: UserWarning: torch.meshgrid: in an upcoming release, it will be required to pass the indexing argument. (Triggered internally at ../aten/src/ATen/native/TensorShape.cpp:3190.)
+  return _VF.meshgrid(tensors, **kwargs)  # type: ignore[attr-defined]
+2022-11-21 13:42:43.313 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:42:49.352 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 240, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 237, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 177, in Manament_month
+    start_date, end_date = st.date_input('start date  - end date :', [])
+ValueError: not enough values to unpack (expected 2, got 0)
+2022-11-21 13:48:07.958 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:48:07.972 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 241, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 238, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 184, in Manament_month
+    mask = (df['CREATEDDATE'] > start_date) & (df['CREATEDDATE'] <= end_date)
+UnboundLocalError: local variable 'df' referenced before assignment
+2022-11-21 13:49:05.948 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:50:21.512 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:50:49.822 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:50:49.836 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 234, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 231, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 185, in Manament_month
+    select_user = 'WITH cte_table AS(SELECT name,employee_id,MIN (time_check) as time_check FROM face_recognition.vcc_face_event WHERE CAST (time_check AS DATE) = \''+ str(d) +'\' GROUP BY (name,employee_id))\
+NameError: name 'd' is not defined
+2022-11-21 13:52:17.947 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:52:17.961 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 234, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 231, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 185, in Manament_month
+    select_user = 'WITH cte_table AS(SELECT name,employee_id,MIN (time_check) as time_check FROM face_recognition.vcc_face_event WHERE CAST (time_check AS DATE) = \''+ str(d) +'\' GROUP BY (name,employee_id))\
+NameError: name 'd' is not defined
+2022-11-21 13:52:27.669 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:52:27.683 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 234, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 231, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 185, in Manament_month
+    select_user = 'WITH cte_table AS(SELECT name,employee_id,MIN (time_check) as time_check FROM face_recognition.vcc_face_event WHERE CAST (time_check AS DATE) = \''+ str(d) +'\' GROUP BY (name,employee_id))\
+NameError: name 'd' is not defined
+2022-11-21 13:52:59.024 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:52:59.038 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 234, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 231, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 185, in Manament_month
+    select_user = 'WITH cte_table AS(SELECT name,employee_id,MIN (time_check) as time_check FROM face_recognition.vcc_face_event WHERE CAST (time_check AS DATE) = \''+ str(d) +'\' GROUP BY (name,employee_id))\
+NameError: name 'd' is not defined
+2022-11-21 13:54:16.586 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:54:16.599 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 234, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 231, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 185, in Manament_month
+    select_user = 'WITH cte_table AS(SELECT name,employee_id,MIN (time_check) as time_check FROM face_recognition.vcc_face_event WHERE CAST (time_check AS DATE) = \''+ str(d) +'\' GROUP BY (name,employee_id))\
+NameError: name 'd' is not defined
+2022-11-21 13:54:42.011 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 13:56:40.098 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:01:03.070 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:03:27.522 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:03:27.540 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 242, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 239, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 187, in Manament_month
+    div.stButton > button:first-child {{ border: 5px solid {primaryColor}; border-radius:20px 20px 20px 20px; }}
+NameError: name 'primaryColor' is not defined
+2022-11-21 14:04:02.035 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:04:02.053 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 245, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 242, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 186, in Manament_month
+    primaryColor = toml.load(".streamlit/config.toml")['theme']['primaryColor']
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/toml/decoder.py", line 133, in load
+    with io.open(_getpath(f), encoding='utf-8') as ffile:
+FileNotFoundError: [Errno 2] No such file or directory: '.streamlit/config.toml'
+2022-11-21 14:04:03.415 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 245, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 242, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 186, in Manament_month
+    primaryColor = toml.load(".streamlit/config.toml")['theme']['primaryColor']
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/toml/decoder.py", line 133, in load
+    with io.open(_getpath(f), encoding='utf-8') as ffile:
+FileNotFoundError: [Errno 2] No such file or directory: '.streamlit/config.toml'
+2022-11-21 14:04:45.102 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:06:52.320 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:11:20.581 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:11:43.310 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:12:07.781 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:12:30.136 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:12:39.359 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:12:50.142 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:13:03.434 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:13:16.500 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:15:33.193 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:16:34.789 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:21:19.721 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:22:20.089 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 14:22:31.426 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:05:18.923 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:05:20.857 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state.py", line 437, in __getitem__
+    return self._getitem(widget_id, key)
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state.py", line 481, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state_proxy.py", line 118, in __getattr__
+    return self[key]
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state_proxy.py", line 89, in __getitem__
+    return get_session_state()[key]
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/safe_session_state.py", line 110, in __getitem__
+    return self._state[key]
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state.py", line 439, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "use_container_width". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 230, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 227, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 206, in Manament_month
+    st.dataframe(df, use_container_width=st.session_state.use_container_width)
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state_proxy.py", line 120, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "use_container_width". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization
+2022-11-21 15:05:35.918 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:16:07.860 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:16:39.861 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:20:19.870 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:23:35.516 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:23:35.531 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 230, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 227, in main
+    Manament_month()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 180, in Manament_month
+    print(end_date[0] - start_date[0])
+TypeError: 'datetime.date' object is not subscriptable
+2022-11-21 15:23:44.419 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:30:01.398 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 15:41:38.518 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:14:10.132 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:14:47.876 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:16:26.230 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:17:51.923 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:18:37.285 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:20:30.496 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-21 17:20:52.903 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-22 08:51:32.889 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 14:11:29.760 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 14:24:56.602 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:13:59.600 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:14:01.646 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3803, in get_loc
+    return self._engine.get_loc(casted_key)
+  File "pandas/_libs/index.pyx", line 138, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 165, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5745, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 5753, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 0
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 221, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 216, in main
+    Manament_day()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 132, in Manament_day
+    st.write(len(df[0]))
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/pandas/core/frame.py", line 3804, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/pandas/core/indexes/base.py", line 3805, in get_loc
+    raise KeyError(key) from err
+KeyError: 0
+2022-11-23 15:14:45.514 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:15:27.405 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:15:28.350 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state.py", line 437, in __getitem__
+    return self._getitem(widget_id, key)
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state.py", line 481, in _getitem
+    raise KeyError
+KeyError
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state_proxy.py", line 118, in __getattr__
+    return self[key]
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state_proxy.py", line 89, in __getitem__
+    return get_session_state()[key]
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/safe_session_state.py", line 110, in __getitem__
+    return self._state[key]
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state.py", line 439, in __getitem__
+    raise KeyError(_missing_key_error_message(key))
+KeyError: 'st.session_state has no key "use_container_width". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 220, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 215, in main
+    Manament_day()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 129, in Manament_day
+    st.dataframe(df, use_container_width=st.session_state.use_container_width)
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/state/session_state_proxy.py", line 120, in __getattr__
+    raise AttributeError(_missing_attr_error_message(key))
+AttributeError: st.session_state has no attribute "use_container_width". Did you forget to initialize it? More info: https://docs.streamlit.io/library/advanced-features/session-state#initialization
+2022-11-23 15:15:37.677 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:21:59.704 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:22:23.135 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:27:25.864 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:27:26.836 Uncaught app exception
+Traceback (most recent call last):
+  File "/data/huydq46/Face/face_env/lib/python3.8/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 563, in _run_script
+    exec(code, module.__dict__)
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 215, in <module>
+    main()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 210, in main
+    Manament_day()
+  File "/data/huydq46/Face/streamlit_insert_user/test.py", line 128, in Manament_day
+    st.write('Số lượng người:'+len(df))
+TypeError: can only concatenate str (not "int") to str
+2022-11-23 15:27:49.525 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 15:28:02.057 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS
+2022-11-23 16:39:53.635 Model Summary: 231 layers, 7064992 parameters, 0 gradients, 15.2 GFLOPS

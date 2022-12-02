@@ -1,0 +1,10 @@
+Error: Option '--server.port' requires an argument.
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to False.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Network URL: http://10.0.8.110:8504
+  External URL: http://171.244.3.130:8504
+
