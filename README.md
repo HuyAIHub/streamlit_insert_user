@@ -29,3 +29,4 @@ Face recognition (Arc Face-paddle):
 - The fourth - back end: push index.bin to Minio and Send message notify using kafka to Server Inference.
 ### Server 2: Ở đây sẽ chạy infer và trả về kết quả
 - The last - back end: After receiving a message. update index.bin and keep running
+https://github.com/Quanghuy99/Real_Time_Face_Recognition
